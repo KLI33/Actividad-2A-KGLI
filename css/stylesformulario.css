@@ -1,1 +1,88 @@
+h1 {
+    color: #1E88E5;          /* Color del texto */
+    font-size: 24px;         /* Tamaño de la letra */
+    font-family: Sans-Serif; /* Tipo de letra */
+    text-align: center;      /* Centrar el texto */
+    font-weight: bold;       /* Negrita */
+    text-transform: uppercase; /* Convertir a mayúsculas */
+    margin-top: 20px;        /* Margen superior */
+}
 
+legend {
+    color: #1565C0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Comic;
+    padding: 0 15px;
+    background-color: white;
+}
+
+fieldset {
+    border: 2px solid #1565C0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+label {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    color: #2c3e50;
+    margin-bottom: 6px;
+}
+
+
+body {
+
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f4f4;
+
+}
+
+.bloque {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+
+    font-size: 36px;
+    text-align: center;
+
+}
+
+/* Tablets */
+
+@media (max-width: 768px) {
+
+    bloque {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+}
+
+/* Celulares */
+
+@media (max-width: 480px) {
+
+    bloque {
+        width: 100%;
+        padding: 15px;
+        border-radius: 0;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+}
