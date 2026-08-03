@@ -2,9 +2,11 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="Encuesta">
-<title>Encuesta de Clima Laboral</title>
+    <meta name="viewport" content="widht=device-width, initial-scale = 1.0"></meta>
+    <link rel="stylesheet" href="css/stylesformulario.css"
+    <meta charset="UTF-8">
+    <meta name="Encuesta">
+    <title>Encuesta de Clima Laboral</title>
 </head>
 
 <body>
@@ -27,64 +29,66 @@
         <input type= "number" id="edad" name="edad"><br>
                 <label for="genero">Género: </label>
         <input type= "text" id="genero" name="genero">
-	  </fieldset>
+	</fieldset>
 
-        <!-- SECCIÓN 1: RESPUESTA ÚNICA (RADIO) -->
-        <div class="question-block">
-            <p class="question-title">1. Considero que cuento con las herramientas necesarias para desarrollar mis funciones.</p>
-            <div class="options-route">
-                <label><input type="radio" name="herramientas" value="1" required> 1 - Totalmente en desacuerdo</label><br>
-                <label><input type="radio" name="herramientas" value="2"> 2 - En desacuerdo</label><br>
-                <label><input type="radio" name="herramientas" value="3"> 3 - Ni de acuerdo ni en desacuerdo</label><br>
-                <label><input type="radio" name="herramientas" value="4"> 4 - De acuerdo</label><br>
-                <label><input type="radio" name="herramientas" value="5"> 5 - Totalmente de acuerdo</label><br>
-            </div>
+    <!-- SECCIÓN 1: RESPUESTA ÚNICA (RADIO) -->
+     <div class="question-block">
+        <p class="question-title">1. Considero que cuento con las herramientas necesarias para desarrollar mis funciones.</p>
+        <div class="options-route">
+            <label><input type="radio" name="herramientas" value="1" required> 1 - Totalmente en desacuerdo</label><br>
+            <label><input type="radio" name="herramientas" value="2"> 2 - En desacuerdo</label><br>
+            <label><input type="radio" name="herramientas" value="3"> 3 - Ni de acuerdo ni en desacuerdo</label><br>
+            <label><input type="radio" name="herramientas" value="4"> 4 - De acuerdo</label><br>
+            <label><input type="radio" name="herramientas" value="5"> 5 - Totalmente de acuerdo</label><br>
         </div>
+    </div>
 
-        <div class="question-block">
-            <p class="question-title">2. Puedo afirmar que mi trabajo me permite un buen equilibrio entre mi vida personal y laboral.</p>
-            <div class="options-route">
-                <label><input type="radio" name="equilibrio" value="1" required> 1 - Totalmente en desacuerdo</label><br>
-                <label><input type="radio" name="equilibrio" value="2"> 2 - En desacuerdo</label><br>
-                <label><input type="radio" name="equilibrio" value="3"> 3 - Ni de acuerdo ni en desacuerd</label><br>
-                <label><input type="radio" name="equilibrio" value="4"> 4 - De acuerdo</label><br>
-                <label><input type="radio" name="equilibrio" value="5"> 5 - Totalmente de acuerdo</label><br>
-            </div>
+    <div class="question-block">
+        <p class="question-title">2. Puedo afirmar que mi trabajo me permite un buen equilibrio entre mi vida personal y laboral.</p>
+        <div class="options-route">
+            <label><input type="radio" name="equilibrio" value="1" required> 1 - Totalmente en desacuerdo</label><br>
+            <label><input type="radio" name="equilibrio" value="2"> 2 - En desacuerdo</label><br>
+            <label><input type="radio" name="equilibrio" value="3"> 3 - Ni de acuerdo ni en desacuerd</label><br>
+            <label><input type="radio" name="equilibrio" value="4"> 4 - De acuerdo</label><br>
+            <label><input type="radio" name="equilibrio" value="5"> 5 - Totalmente de acuerdo</label><br>
         </div>
+    </div>
 
         <!-- SECCIÓN 2: OPCIÓN MÚLTIPLE (CHECKBOX) -->
-        <div class="question-block">
-            <p class="question-title">3. ¿Cuáles son las principales áreas de oportunidad en mi área para mejorar el ambiente laboral? (Puedes elegir uno o más de uno)</p>
-            <div class="options-route">
-                <label><input type="checkbox" name="mejoras[]" value="comunicacion"> Comunicación interna</label><br>
-                <label><input type="checkbox" name="mejoras[]" value="capacitacion"> Capacitación y desarrollo</label><br>
-                <label><input type="checkbox" name="mejoras[]" value="infraestructura"> Espacio físico o herramientas de software</label><br>
-                <label><input type="checkbox" name="mejoras[]" value="reconocimiento"> Reconocimiento y recompensas</label><br>
-                <label><input type="checkbox" name="mejoras[]" value="liderazgo"> Estilo de liderazgo de los jefes</label><br>
-            </div>
+    <div class="question-block">
+        <p class="question-title">3. ¿Cuáles son las principales áreas de oportunidad en mi área para mejorar el ambiente laboral? (Puedes elegir uno o más de uno)</p>
+        <div class="options-route">
+            <label><input type="checkbox" name="mejoras[]" value="comunicacion"> Comunicación interna</label><br>
+            <label><input type="checkbox" name="mejoras[]" value="capacitacion"> Capacitación y desarrollo</label><br>
+            <label><input type="checkbox" name="mejoras[]" value="infraestructura"> Espacio físico o herramientas de software</label><br>
+            <label><input type="checkbox" name="mejoras[]" value="reconocimiento"> Reconocimiento y recompensas</label><br>
+            <label><input type="checkbox" name="mejoras[]" value="liderazgo"> Estilo de liderazgo de los jefes</label><br>
         </div>
+    </div>
 
-        <div class="question-block">
-            <p class="question-title">4. ¿Qué prestacions laborales preferirías tener? (Puedes elegir uno o más de uno)</p>
-            <div class="options-route">
-                <label><input type="checkbox" name="beneficios[]" value="homeoffice"> Implementación de trabajo en casa (homeoffice)</label><br>
-                <label><input type="checkbox" name="beneficios[]" value="horario_flexible"> Horario de entrada o salida flexible</label><br>
-                <label><input type="checkbox" name="beneficios[]" value="seguro"> Seguro  de gastos médicos mayores</label><br>
-                <label><input type="checkbox" name="beneficios[]" value="deportivo"> Acceso o descuento en gimnasios o deportivos</label><br>
-                <label><input type="checkbox" name="beneficios[]" value="descuentos"> Convenios o descuentos corporativos</label><br>
-            </div>
+    <div class="question-block">
+        <p class="question-title">4. ¿Qué prestacions laborales preferirías tener? (Puedes elegir uno o más de uno)</p>
+        <div class="options-route">
+            <label><input type="checkbox" name="beneficios[]" value="homeoffice"> Implementación de trabajo en casa (homeoffice)</label><br>
+            <label><input type="checkbox" name="beneficios[]" value="horario_flexible"> Horario de entrada o salida flexible</label><br>
+            <label><input type="checkbox" name="beneficios[]" value="seguro"> Seguro  de gastos médicos mayores</label><br>
+            <label><input type="checkbox" name="beneficios[]" value="deportivo"> Acceso o descuento en gimnasios o deportivos</label><br>
+            <label><input type="checkbox" name="beneficios[]" value="descuentos"> Convenios o descuentos corporativos</label><br>
         </div>
+    </div>
+</form>
+
+<br>
+   <fieldset>
+    <form action="sugerencia" method="POST">
+        <label for="sugerencias">Comentarios o sugerencias:</label><br>
+        <textarea id="sugerencias" name="sugerencias" rows="5" cols="50"
+        placeholder="Escribe tus comentarios aquí..."></textarea><br>
     </form>
-
-   	<fieldset>
-        <form action="sugerencia" method="POST">
-            <label for="sugerencias">Comentarios o sugerencias:</label><br>
-          <textarea id="sugerencias" name="sugerencias" rows="5" cols="50"
-            placeholder="Escribe tus comentarios aquí..."></textarea><br>
-        </form>
-
-        <button type="submit">Enviar Encuesta</button>
-    </fieldset>
+   </fieldset>
+    
+    <br>
+    <button type="submit">Enviar Encuesta</button>
 
 </body>
 </html>
