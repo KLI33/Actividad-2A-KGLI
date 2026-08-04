@@ -89,6 +89,11 @@ h1 {
 	Margin: 30 px auto;
 }
 
+Input[type=“radio“]
+Input[type=“checkbox“] {
+	Width: auto;
+}
+
 /* Tablets */
 
 @media (max-width: 768px) {
