@@ -1,3 +1,14 @@
+*{
+	box-sizing: border-box;
+}
+
+.encabezado {
+	padding: 28 px 20 px;
+	color: #FFFFF;
+	background-color: rebeccapurple;
+	text-align: center;
+}
+
 h1 {
     color: #1E88E5;          /* Color del texto */
     font-size: 24px;         /* Tamaño de la letra */
@@ -55,6 +66,27 @@ h1 {
     font-size: 36px;
     text-align: center;
 
+}
+
+.navegacion a:hover,
+.navegacion a:focus,
+.navegacion a.enlace-actual {
+	color#2D2335;
+	background-color yellow;
+}
+
+.navegacion a:hover {
+	Outline: 3px solid #FFFFFF;
+}
+
+.navegacion a:focus {
+	Outline: 3px solid #FFFFFF;
+}
+
+.contenedor {
+	Width: 90%;
+	Max-width: 850 px;
+	Margin: 30 px auto;
 }
 
 /* Tablets */
